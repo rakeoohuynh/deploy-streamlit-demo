@@ -82,7 +82,7 @@ elif menu == 'Thêm hàng':
                 }
                 dong_moi = pd.DataFrame([ds_hang_moi])
                 df_moi = pd.concat([df, dong_moi], ignore_index=True)
-                df_moi.to_csv('don_hang.csv')
+                df_moi.to_csv('don_hang.csv',index=False)
                 st.success('Them hang thanh cong')
                 # st.rerun()
 elif menu =='Sửa xóa':
